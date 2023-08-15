@@ -1,0 +1,1 @@
+{"name": "Japanese Example Sentences", "config": {"combinedDstField": "Examples", "englishDstField": "ExamplesEnglish", "japaneseDstField": "ExamplesJapanese", "lookupOnAdd": true, "maxPermanent": 5, "maxShow": 20, "srcFields": ["Expression"], "weightedSample": false}}

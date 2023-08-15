@@ -1,0 +1,10 @@
+{
+	"maxShow": 20,
+	"maxPermanent": 5,
+	"srcFields": ["Expression"],
+	"combinedDstField": "Examples",
+	"weightedSample": true,
+	"lookupOnAdd": true,
+	"japaneseDstField": "ExamplesJapanese",
+	"englishDstField": "ExamplesEnglish"
+}
