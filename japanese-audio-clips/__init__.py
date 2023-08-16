@@ -57,7 +57,7 @@ def add_audio(nids):
         try:
             # finds audio, and if found, writes it to file in media directory
             audio = find_audio(note[KANA_FIELD], note[KANJI_FIELD])
-            mw.col.media.write_data(str(nid) + ".mp3", audio)
+            mw.col.media.write_data(f"{nid}.mp3", audio)
         except NoAudioClipFoundException:
             # if no audio is found, add no-audio tag
             note.add_tag("no-audio")
@@ -66,7 +66,7 @@ def add_audio(nids):
 
         try:
             # writes audio file name to Anki note field
-            note[AUDIO_FIELD] = "[sound:" + nid + ".mp3]"
+            note[AUDIO_FIELD] = f"[sound:{nid}.mp3]"
         except KeyError:
             pass
 
